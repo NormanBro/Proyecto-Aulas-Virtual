@@ -1,0 +1,7 @@
+{
+    "/API/VIRTUAL/*":{
+        "target":"https://api-virtual-uni-web-production.up.railway.app/",
+        "secure":false,
+        "changeOrigin":true
+    }
+}

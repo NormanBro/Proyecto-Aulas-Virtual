@@ -1,0 +1,19 @@
+.body-Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--Paleta-Color-5);
+}
+
+.Contenedor-Par{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+}
+
+.Contenedor-Div h2{
+    text-align: center;
+    font-size: 26px;
+}

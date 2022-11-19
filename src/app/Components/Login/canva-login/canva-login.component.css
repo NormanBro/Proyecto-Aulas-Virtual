@@ -15,5 +15,19 @@
 
 .Contenedor-Div h2{
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    img{
+        display: none;
+    }
+    .Contenedor-Par{
+        display: block;
+    }
+    .Contenedor-Par{
+        padding: 0 10px;
+    }
 }

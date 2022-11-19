@@ -11,6 +11,8 @@ import { FormLoginComponent } from './Components/Login/form-login/form-login.com
 
 //Angular Material
 
+import { MaterialModule } from './material.module';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormLoginComponent } from './Components/Login/form-login/form-login.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

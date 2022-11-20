@@ -1,0 +1,9 @@
+.Card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Card-Mat{
+    width: 80%;
+    margin: 10px 0;
+}

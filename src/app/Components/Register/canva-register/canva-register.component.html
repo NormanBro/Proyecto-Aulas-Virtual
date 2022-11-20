@@ -4,120 +4,17 @@
         <mat-tab-group class="Grupo-Registro">
             <mat-tab label="Estudiante"> 
                 <!--Formulario-->
-                <form>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Nombre:</mat-label>
-                            <input matInput placeholder="Nombre">
-                        </mat-form-field>
-                        <mat-form-field appearance="outline">
-                            <mat-label>Apellido Primario:</mat-label>
-                            <input matInput placeholder="Apellido Primario">
-                        </mat-form-field>
-                        <mat-form-field appearance="outline">
-                            <mat-label>Apellido Secundario:</mat-label>
-                            <input matInput placeholder="Apellido Secundario">
-                        </mat-form-field>
-                    </div>
-                    
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Correo:</mat-label>
-                            <input matInput placeholder="Correo">
-                        </mat-form-field>
-                    </div>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Constraseña:</mat-label>
-                            <input matInput placeholder="Constraseña:">
-                        </mat-form-field>
-                    </div>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Confirmar Contraseña:</mat-label>
-                            <input matInput placeholder="Confirmar Contraseña:">
-                        </mat-form-field>
-                    </div>
-                    <span>Ya estas Registrado -> <a href="Login">Login</a></span>
-                    <br>
-                    <button mat-raised-button color="primary" class="btn-form">Aceotar</button>
-                </form>
+                <app-form-estudiante></app-form-estudiante>
                 <!--End-->
             </mat-tab>
             <mat-tab label="Maestro"> 
                 <!--Formulario-->
-                <form>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Nombre:</mat-label>
-                            <input matInput placeholder="Nombre">
-                        </mat-form-field>
-                        <mat-form-field appearance="outline">
-                            <mat-label>Apellido Primario:</mat-label>
-                            <input matInput placeholder="Apellido Primario">
-                        </mat-form-field>
-                        <mat-form-field appearance="outline">
-                            <mat-label>Apellido Secundario:</mat-label>
-                            <input matInput placeholder="Apellido Secundario">
-                        </mat-form-field>
-                    </div>
-                    
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Correo:</mat-label>
-                            <input matInput placeholder="Correo">
-                        </mat-form-field>
-                    </div>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Constraseña:</mat-label>
-                            <input matInput placeholder="Constraseña:">
-                        </mat-form-field>
-                    </div>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Confirmar Contraseña:</mat-label>
-                            <input matInput placeholder="Confirmar Contraseña:">
-                        </mat-form-field>
-                    </div>
-                    <span>Ya estas Registrado -> <a href="Login">Login</a></span>
-                    <br>
-                    <button mat-raised-button color="primary" class="btn-form">Aceotar</button>
-                </form>
+                <app-form-maestro></app-form-maestro>
                 <!--End-->
             </mat-tab>
             <mat-tab label="Tutor"> 
                 <!--Formulario-->
-                <form>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Codigo del Alumno:</mat-label>
-                            <input matInput placeholder="Codigo Alumno">
-                        </mat-form-field>
-                    </div>
-                    
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Correo:</mat-label>
-                            <input matInput placeholder="Correo">
-                        </mat-form-field>
-                    </div>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Constraseña:</mat-label>
-                            <input matInput placeholder="Constraseña:">
-                        </mat-form-field>
-                    </div>
-                    <div class="form-input">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Confirmar Contraseña:</mat-label>
-                            <input matInput placeholder="Confirmar Contraseña:">
-                        </mat-form-field>
-                    </div>
-                    <span>Ya estas Registrado -> <a href="Login">Login</a></span>
-                    <br>
-                    <button mat-raised-button color="primary" class="btn-form">Aceotar</button>
-                </form>
+                <app-form-tutor></app-form-tutor>
                 <!--End-->
             </mat-tab>
         

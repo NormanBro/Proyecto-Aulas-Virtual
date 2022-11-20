@@ -17,18 +17,7 @@
     margin-top: 10px;
 }
 .Grupo-Registro{
-    
-    margin: 0 110px;
-}
-.form-input{
-    margin: 10px 0;
-}
-.form-input mat-form-field{
-    width: 80%;
-}
-.btn-form{
-    width: 100%;
-    margin:10px 0;
+    margin: 0 130px;
 }
 @media screen and (max-width:768px) {
     .Contenedor-Register{

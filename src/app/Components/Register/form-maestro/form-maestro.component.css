@@ -1,0 +1,11 @@
+
+.form-input{
+    margin: 10px 0;
+}
+.form-input mat-form-field{
+    width: 80%;
+}
+.btn-form{
+    width: 100%;
+    margin:10px 0;
+}

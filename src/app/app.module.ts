@@ -12,15 +12,24 @@ import { FormLoginComponent } from './Components/Login/form-login/form-login.com
 //Angular Material
 
 import { MaterialModule } from './Material/material';
-import {MatTabsModule} from '@angular/material/tabs';
 import { CanvaRegisterComponent } from './Components/Register/canva-register/canva-register.component';
+import { FormEstudianteComponent } from './Components/Register/form-estudiante/form-estudiante.component';
+import { FormMaestroComponent } from './Components/Register/form-maestro/form-maestro.component';
+import { FormTutorComponent } from './Components/Register/form-tutor/form-tutor.component';
+import { NavegadorComponent } from './Components/Extras/navegador/navegador.component';
+import { CanvaHomeComponent } from './Components/Home/canva-home/canva-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvaLoginComponent,
     FormLoginComponent,
-    CanvaRegisterComponent
+    CanvaRegisterComponent,
+    FormEstudianteComponent,
+    FormMaestroComponent,
+    FormTutorComponent,
+    NavegadorComponent,
+    CanvaHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,6 @@ import { CanvaRegisterComponent } from './Components/Register/canva-register/can
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    MatTabsModule
     
   ],
   providers: [],

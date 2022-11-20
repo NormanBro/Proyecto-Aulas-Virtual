@@ -18,6 +18,16 @@ import { FormMaestroComponent } from './Components/Register/form-maestro/form-ma
 import { FormTutorComponent } from './Components/Register/form-tutor/form-tutor.component';
 import { NavegadorComponent } from './Components/Extras/navegador/navegador.component';
 import { CanvaHomeComponent } from './Components/Home/canva-home/canva-home.component';
+import { NavEstudianteComponent } from './Components/Extras/nav-estudiante/nav-estudiante.component';
+import { NavMaestroComponent } from './Components/Extras/nav-maestro/nav-maestro.component';
+import { NavTutorComponent } from './Components/Extras/nav-tutor/nav-tutor.component';
+import { HomeEstudianteComponent } from './Components/Home/home-estudiante/home-estudiante.component';
+import { HomeMaestroComponent } from './Components/Home/home-maestro/home-maestro.component';
+import { HomeTutorComponent } from './Components/Home/home-tutor/home-tutor.component';
+import { CanvaNotificacionComponent } from './Components/Notificacion/canva-notificacion/canva-notificacion.component';
+import { BodyNotificacionComponent } from './Components/Notificacion/body-notificacion/body-notificacion.component';
+import { CanvaMensajeComponent } from './Components/Mensajes/canva-mensaje/canva-mensaje.component';
+import { BodyMensajeComponent } from './Components/Mensajes/body-mensaje/body-mensaje.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +39,17 @@ import { CanvaHomeComponent } from './Components/Home/canva-home/canva-home.comp
     FormMaestroComponent,
     FormTutorComponent,
     NavegadorComponent,
-    CanvaHomeComponent
+    CanvaHomeComponent,
+    NavEstudianteComponent,
+    NavMaestroComponent,
+    NavTutorComponent,
+    HomeEstudianteComponent,
+    HomeMaestroComponent,
+    HomeTutorComponent,
+    CanvaNotificacionComponent,
+    BodyNotificacionComponent,
+    CanvaMensajeComponent,
+    BodyMensajeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,9 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatGridListModule } from '@angular/material/grid-list'
+import { MatCardModule } from '@angular/material/card'
 
 @NgModule(({
     imports:[
@@ -15,6 +18,9 @@ import { MatIconModule } from '@angular/material/icon'
         MatToolbarModule,
         MatTabsModule,
         MatIconModule,
+        MatSidenavModule,
+        MatGridListModule,
+        MatCardModule,
     ],
     exports:[
         MatFormFieldModule,
@@ -23,7 +29,9 @@ import { MatIconModule } from '@angular/material/icon'
         MatToolbarModule,
         MatTabsModule,
         MatIconModule,
-        
+        MatSidenavModule,
+        MatGridListModule,
+        MatCardModule,
     ]
 }))
 

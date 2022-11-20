@@ -1,19 +1,15 @@
 <mat-toolbar color="primary">
     <span>AV MEX</span>
     <div class="space"></div>
+    <div class="btn-space">
+        <!--app-nav-estudiante class="btn-space"></app-nav-estudiante-->
+        <!--app-nav-maestro class="btn-space"></app-nav-maestro-->
+        <app-nav-tutor></app-nav-tutor>
+    </div>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" class="btn-space">
-        HOME
-        <!--mat-icon>favorite</mat-icon-->
+        <!--mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="notifications">notifications</mat-icon-->
+        Notificion
     </button>
 
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" class="btn-space">
-        Mensajes
-        <!--mat-icon>favorite</mat-icon-->
-    </button>
-    
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" class="btn-space">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="notifications">notifications</mat-icon>
-    </button>
-    <a mat-raised-button color="warn">Cerrar Session</a>
-
+    <a mat-raised-button color="warn" class="btn-space">Cerrar Session</a>
 </mat-toolbar>

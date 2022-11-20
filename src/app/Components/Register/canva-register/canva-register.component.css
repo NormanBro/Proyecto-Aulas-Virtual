@@ -1,0 +1,21 @@
+.body-Register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--Paleta-Color-5);
+}
+
+.Contenedor-Register{
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+}
+.Contenedor-Register h2{
+    font-size: 28px;
+    margin-top: 10px;
+}
+.Grupo-Registro{
+    margin: 0 20px;
+}

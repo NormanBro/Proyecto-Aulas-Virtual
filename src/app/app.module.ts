@@ -11,21 +11,24 @@ import { FormLoginComponent } from './Components/Login/form-login/form-login.com
 
 //Angular Material
 
-import { MaterialModule } from './material.module';
-
+import { MaterialModule } from './Material/material';
+import {MatTabsModule} from '@angular/material/tabs';
+import { CanvaRegisterComponent } from './Components/Register/canva-register/canva-register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvaLoginComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    CanvaRegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    MatTabsModule
     
   ],
   providers: [],

@@ -8,7 +8,7 @@
 
 .Contenedor-Register{
     background-color: white;
-    width: 40%;
+    width: 55%;
     text-align: center;
     border-radius: 10px;
 }
@@ -17,5 +17,31 @@
     margin-top: 10px;
 }
 .Grupo-Registro{
-    margin: 0 20px;
+    
+    margin: 0 110px;
+}
+.form-input{
+    margin: 10px 0;
+}
+.form-input mat-form-field{
+    width: 80%;
+}
+.btn-form{
+    width: 100%;
+    margin:10px 0;
+}
+@media screen and (max-width:768px) {
+    .Contenedor-Register{
+        width: 80%;
+    }
+}
+@media screen and (max-width:607px) {
+    .Contenedor-Register{
+        width: 80%;
+    }
+}
+@media screen and (max-width:545px) {
+    .Contenedor-Register{
+        width: 80%;
+    }
 }

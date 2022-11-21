@@ -1,0 +1,28 @@
+.Zona-Grupos{
+    background-color: var(--Paleta-Color-3);
+    width: 620px;
+    height: 100%;
+    border-radius: 10px;
+}
+.Zona-Grupos mat-form-field{
+    width: 100%;
+    color: white;
+}
+.ActionsButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ActionsButtons mat-card-actions{
+    margin: 0 10px;
+}
+mat-card{
+    
+    border-bottom: 1px solid gray;
+    margin: 0 10px;
+    background-color: transparent;
+}
+mat-card-header{
+    display: flex;
+    align-items: center;
+}

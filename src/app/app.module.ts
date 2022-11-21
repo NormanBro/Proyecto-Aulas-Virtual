@@ -28,6 +28,8 @@ import { CanvaNotificacionComponent } from './Components/Notificacion/canva-noti
 import { BodyNotificacionComponent } from './Components/Notificacion/body-notificacion/body-notificacion.component';
 import { CanvaMensajeComponent } from './Components/Mensajes/canva-mensaje/canva-mensaje.component';
 import { BodyMensajeComponent } from './Components/Mensajes/body-mensaje/body-mensaje.component';
+import { ZonaMensajesComponent } from './Components/Mensajes/Partes/zona-mensajes/zona-mensajes.component';
+import { ZonaGruposComponent } from './Components/Mensajes/Partes/zona-grupos/zona-grupos.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { BodyMensajeComponent } from './Components/Mensajes/body-mensaje/body-me
     CanvaNotificacionComponent,
     BodyNotificacionComponent,
     CanvaMensajeComponent,
-    BodyMensajeComponent
+    BodyMensajeComponent,
+    ZonaMensajesComponent,
+    ZonaGruposComponent
   ],
   imports: [
     BrowserModule,

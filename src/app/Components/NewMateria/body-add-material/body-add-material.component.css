@@ -1,0 +1,17 @@
+.forms{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 40px ;
+}
+
+.forms .btn-login{
+    margin-top: 10px;
+    width: 70%;
+}
+
+@media screen and (max-width:768px) {
+    .btn-login{
+        margin-bottom: 10px;
+    }
+}

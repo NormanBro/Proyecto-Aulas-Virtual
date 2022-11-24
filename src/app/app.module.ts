@@ -35,6 +35,8 @@ import { BodyAddMaterialComponent } from './Components/NewMateria/body-add-mater
 import { DialogAccesoAulaComponent } from './Components/Extras/Dialogos/dialog-acceso-aula/dialog-acceso-aula.component';
 import { CanvaUnidadComponent } from './Components/Unidades/canva-unidad/canva-unidad.component';
 import { BodyUnidadComponent } from './Components/Unidades/body-unidad/body-unidad.component';
+import { CanvaTareaComponent } from './Components/Tareas/canva-tarea/canva-tarea.component';
+import { BodyTareaComponent } from './Components/Tareas/body-tarea/body-tarea.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { BodyUnidadComponent } from './Components/Unidades/body-unidad/body-unid
     BodyAddMaterialComponent,
     DialogAccesoAulaComponent,
     CanvaUnidadComponent,
-    BodyUnidadComponent
+    BodyUnidadComponent,
+    CanvaTareaComponent,
+    BodyTareaComponent
   ],
   entryComponents:[
     DialogAccesoAulaComponent,

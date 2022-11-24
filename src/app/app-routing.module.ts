@@ -5,6 +5,7 @@ import { CanvaLoginComponent } from './Components/Login/canva-login/canva-login.
 import { CanvaMensajeComponent } from './Components/Mensajes/canva-mensaje/canva-mensaje.component';
 import { CanvaNotificacionComponent } from './Components/Notificacion/canva-notificacion/canva-notificacion.component';
 import { CanvaRegisterComponent } from './Components/Register/canva-register/canva-register.component';
+import { CanvaTareaComponent } from './Components/Tareas/canva-tarea/canva-tarea.component';
 import { CanvaUnidadComponent } from './Components/Unidades/canva-unidad/canva-unidad.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:"Home",component:CanvaHomeComponent},
   {path:"Mensaje",component:CanvaMensajeComponent},
   {path:"Notificacion",component:CanvaNotificacionComponent},
-  {path:"Unidad",component:CanvaUnidadComponent}
+  {path:"Unidad",component:CanvaUnidadComponent},
+  {path:"Tarea",component:CanvaTareaComponent}
 ];
 
 @NgModule({

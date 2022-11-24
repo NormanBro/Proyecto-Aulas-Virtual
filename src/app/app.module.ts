@@ -33,6 +33,8 @@ import { ZonaGruposComponent } from './Components/Mensajes/Partes/zona-grupos/zo
 import { CanvaAddMaterialComponent } from './Components/NewMateria/canva-add-material/canva-add-material.component';
 import { BodyAddMaterialComponent } from './Components/NewMateria/body-add-material/body-add-material.component';
 import { DialogAccesoAulaComponent } from './Components/Extras/Dialogos/dialog-acceso-aula/dialog-acceso-aula.component';
+import { CanvaUnidadComponent } from './Components/Unidades/canva-unidad/canva-unidad.component';
+import { BodyUnidadComponent } from './Components/Unidades/body-unidad/body-unidad.component';
 
 @NgModule({
   declarations: [
@@ -59,10 +61,13 @@ import { DialogAccesoAulaComponent } from './Components/Extras/Dialogos/dialog-a
     ZonaGruposComponent,
     CanvaAddMaterialComponent,
     BodyAddMaterialComponent,
-    DialogAccesoAulaComponent
+    DialogAccesoAulaComponent,
+    CanvaUnidadComponent,
+    BodyUnidadComponent
   ],
   entryComponents:[
-    DialogAccesoAulaComponent
+    DialogAccesoAulaComponent,
+    CanvaAddMaterialComponent
   ],
   imports: [
     BrowserModule,

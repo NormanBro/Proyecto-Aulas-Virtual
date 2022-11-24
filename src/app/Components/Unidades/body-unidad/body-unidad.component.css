@@ -1,0 +1,55 @@
+.list-Unidad{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Box-Unidad{
+    width: 70%;
+}
+.title-unidad{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 28px;
+
+}
+.Card-Tarea{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--Paleta-Color-1);
+    color: white;
+    padding: 10px 10px 0 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.Card-Tarea p{
+    word-wrap: break-word;
+}
+.Card-Tarea .Title-Tarea{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Card-Tarea  .Fecha-Tarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Card-Tarea .Estado-Tarea{
+    display: flex;
+    justify-content: center;
+    color: rgb(47, 218, 47);
+}
+
+.Card-Tarea .Estado-Tarea p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Tabla-Entregas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}

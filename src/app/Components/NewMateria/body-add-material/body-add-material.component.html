@@ -1,13 +1,14 @@
-<form class="forms">
-    <h2>Crear Nueva Materia</h2>
-    <hr>
-    <div class="form-input">
-        <mat-form-field appearance="outline">
+<form>
+    <h1 mat-dialog-title>Agregar Nueva Materia</h1>
+    <div mat-dialog-content>
+        <p>Nombre de Materia</p>
+        <mat-form-field appearance="fill">
             <mat-label>Nombre de Materia</mat-label>
-            <input matInput placeholder="Nombre de Materia">
+            <input matInput>
         </mat-form-field>
     </div>
-    
-    <br>
-    <button mat-raised-button color="primary" class="btn-login">Crear Materia</button>
+    <div mat-dialog-actions>
+        <button mat-button [mat-dialog-close]>Ok</button>
+        <button mat-button [mat-dialog-close] cdkFocusInitial>Salir</button>
+    </div>
 </form>

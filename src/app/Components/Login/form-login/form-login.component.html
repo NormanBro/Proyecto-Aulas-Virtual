@@ -1,19 +1,19 @@
 <!--Formulario-->
-<form class="forms">
+<form class="forms" [formGroup]="FormLogin" (ngSubmit)="IniciarSesion()">
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Correo:</mat-label>
-            <input matInput placeholder="Correo Electronico">
+            <input matInput placeholder="Correo Electronico" formControlName="Correo">
         </mat-form-field>
     </div>
     <div class="form-input">
         <mat-form-field appearance="outline">
           <mat-label>Contraseña:</mat-label>
-          <input matInput placeholder="Contraseña">
+          <input type="password" matInput placeholder="Contraseña" formControlName="Contraseña">
         </mat-form-field>
     </div>
     <span>No Tiene una cuenta Hecha -> <a href="/Register">Registarse</a></span>
     <br>
-    <button mat-raised-button color="primary" class="btn-login">Ingresar</button>
+    <button mat-raised-button color="primary" class="btn-login" [disabled]="FormLogin.invalid">Ingresar</button>
 </form>
 <!--End-->

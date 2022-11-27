@@ -1,6 +1,6 @@
 {
     "/API/VIRTUAL/*":{
-        "target":["https://api-virtual-uni-web-production.up.railway.app/","http://localhost:3000/"],
+        "target":"http://localhost:3000/",
         "secure":false,
         "changeOrigin":true
     }

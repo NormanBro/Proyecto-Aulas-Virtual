@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl,Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+import { ServPostService } from 'src/app/Service/ServPost/serv-post.service';
 
 @Component({
   selector: 'app-form-tutor',
@@ -22,8 +24,15 @@ export class FormTutorComponent implements OnInit {
       this.openSnackBar('No es igual la contraseña','Undo');
       
     }else{
-      this.openSnackBar('Registrado','Dismiss');
-      console.log(this.FormRegister.value);
+      const BODY={
+        "Codigo":this.FormRegister.value.Codigo,
+        "Correo":this.FormRegister.value.Correo,
+        "Password":this.FormRegister.value.Contraseña
+      }
+
+      this.ServPost.PostAll('tutor',BODY).subscribe(resp=>{
+        this._Router.navigate(["Login"]);
+      })
     }
   }
 
@@ -31,7 +40,11 @@ export class FormTutorComponent implements OnInit {
     this._snackBar.open(message,action)
   }
   
-  constructor(public _snackBar:MatSnackBar) { }
+  constructor(
+    public _snackBar:MatSnackBar,
+    private _Router:Router,
+    private ServPost:ServPostService
+    ) { }
 
   ngOnInit(): void {
     

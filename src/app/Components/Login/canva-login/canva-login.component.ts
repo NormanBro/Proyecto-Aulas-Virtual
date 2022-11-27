@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServGetService } from 'src/app/Service/ServGet/serv-get.service';
 
 @Component({
   selector: 'app-canva-login',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CanvaLoginComponent implements OnInit {
 
-  constructor() { }
+  public GetData:any=[]
+  constructor(private ServGet:ServGetService) { }
 
   ngOnInit(): void {
+    this.ServGet.GetAllBD('usuario').subscribe(Data=>{
+      this.GetData=Data
+    })
+    
   }
 
 }

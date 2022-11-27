@@ -34,7 +34,7 @@ input#btn_enviar{
 
 .box-entrega{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 

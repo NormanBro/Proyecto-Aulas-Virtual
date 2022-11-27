@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CanvaLoginComponent } from './Components/Login/canva-login/canva-login.component';
 import { FormLoginComponent } from './Components/Login/form-login/form-login.component';
 
+import { FormsModule,ReactiveFormsModule }from '@angular/forms'
+
 //Angular Material
 
 import { MaterialModule } from './Material/material';
@@ -79,7 +81,8 @@ import { BodyTareaComponent } from './Components/Tareas/body-tarea/body-tarea.co
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

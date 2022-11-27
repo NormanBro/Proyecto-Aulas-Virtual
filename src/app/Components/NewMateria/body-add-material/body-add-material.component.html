@@ -1,20 +1,20 @@
-<form>
+<form [formGroup]="FormAdd">
     <h1 mat-dialog-title>Agregar Nueva Materia</h1>
     <div mat-dialog-content>
         <p>Nombre de Materia</p>
         <mat-form-field appearance="fill">
             <mat-label>Nombre de Materia</mat-label>
-            <input matInput>
+            <input matInput formControlName="Nombre">
         </mat-form-field>
         <div class="Box-Envio">
             <div id="div_file">
                 <p id="texto">Subir Avatar Materia</p>
-                <input type="file" id="btn_enviar">
+                <input type="file" id="btn_enviar" (change)="OnFilesAvatar($event)" formControlName="Avatar">
             </div>
         </div>
     </div>
     <div mat-dialog-actions>
-        <button mat-button [mat-dialog-close]>Ok</button>
+        <button mat-button [mat-dialog-close] (click)="EntrarMateria()">Ok</button>
         <button mat-button [mat-dialog-close] cdkFocusInitial>Salir</button>
     </div>
 </form>

@@ -6,22 +6,23 @@
             <hr>
             <mat-card-content>
                 <div class="Card-Tarea">
+                    
                     <div class="Title-Tarea">
                         <p>Tarea 1</p>
                     </div>
                     <div class="Fecha-Tarea">
                         <p>14/01/2021</p>
                     </div>
-                    
-                    <div class="Tabla-Entregas">
-                        <a mat-button color="accent">Lista de Entregas</a>
-                    </div>
-
-                    <!--Alumnos-->
-                    <!--Antes de Entregar-->
+                    <!--Maestro-->
                     <!--div class="Tabla-Entregas">
                         <a mat-button color="accent">Lista de Entregas</a>
                     </div-->
+
+                    <!--Alumnos-->
+                    <!--Antes de Entregar-->
+                    <div class="Estado-Tarea">
+                        <p [ngStyle]="{'color':'red'}">No Entregado <mat-icon>clear</mat-icon></p>
+                    </div>
                     <!--Despues de entregar de Entregar-->
                     <!--div class="Estado-Tarea">
                         <p>Entregado <mat-icon>done</mat-icon></p>

@@ -1,30 +1,30 @@
-<form>
+<form [formGroup]="FormRegister" (ngSubmit)="EnterRegister()">
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Codigo del Alumno:</mat-label>
-            <input matInput placeholder="Codigo Alumno">
+            <input matInput placeholder="Codigo Alumno" formControlName="Codigo">
         </mat-form-field>
     </div>
     
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Correo:</mat-label>
-            <input matInput placeholder="Correo">
+            <input matInput placeholder="Correo" formControlName="Correo">
         </mat-form-field>
     </div>
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Constraseña:</mat-label>
-            <input matInput placeholder="Constraseña:">
+            <input type="password" matInput placeholder="Constraseña:" formControlName="Contraseña">
         </mat-form-field>
     </div>
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Confirmar Contraseña:</mat-label>
-            <input matInput placeholder="Confirmar Contraseña:">
+            <input type="password" matInput placeholder="Confirmar Contraseña:" formControlName="ConfirmarContraseña">
         </mat-form-field>
     </div>
     <span>Ya estas Registrado -> <a href="Login">Login</a></span>
     <br>
-    <button mat-raised-button color="primary" class="btn-form">Aceptar</button>
+    <button mat-raised-button color="primary" class="btn-form" [disabled]="FormRegister.invalid">Aceptar</button>
 </form>

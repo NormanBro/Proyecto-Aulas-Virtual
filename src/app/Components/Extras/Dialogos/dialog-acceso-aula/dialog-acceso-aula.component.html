@@ -1,14 +1,14 @@
-<form>
+<form [formGroup]="FormAdd">
     <h1 mat-dialog-title>Acceder a Aula</h1>
     <div mat-dialog-content>
         <p>Escribe el Codigo</p>
         <mat-form-field appearance="fill">
             <mat-label>Codigo del Aula</mat-label>
-            <input matInput>
+            <input matInput formControlName="Nombre">
         </mat-form-field>
     </div>
     <div mat-dialog-actions>
-        <button mat-button [mat-dialog-close]>Ok</button>
+        <button mat-button [mat-dialog-close] (click)="EntrarMateria()">Ok</button>
         <button mat-button [mat-dialog-close] cdkFocusInitial>Salir</button>
     </div>
 </form>

@@ -1,38 +1,38 @@
-<form>
+<form [formGroup]="FormRegister" (ngSubmit)="EnterRegister()">
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Nombre:</mat-label>
-            <input matInput placeholder="Nombre">
+            <input matInput placeholder="Nombre" formControlName="Nombre">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Apellido Primario:</mat-label>
-            <input matInput placeholder="Apellido Primario">
+            <input matInput placeholder="Apellido Primario" formControlName="ApellidoPrimario">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Apellido Secundario:</mat-label>
-            <input matInput placeholder="Apellido Secundario">
+            <input matInput placeholder="Apellido Secundario" formControlName="ApellidoSecundario">
         </mat-form-field>
     </div>
     
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Correo:</mat-label>
-            <input matInput placeholder="Correo">
+            <input matInput placeholder="Correo" formControlName="Correo">
         </mat-form-field>
     </div>
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Constraseña:</mat-label>
-            <input matInput placeholder="Constraseña:">
+            <input type="password" matInput placeholder="Constraseña:" formControlName="Contraseña">
         </mat-form-field>
     </div>
     <div class="form-input">
         <mat-form-field appearance="outline">
             <mat-label>Confirmar Contraseña:</mat-label>
-            <input matInput placeholder="Confirmar Contraseña:">
+            <input type="password" matInput placeholder="Confirmar Contraseña:" formControlName="ConfirmarContraseña">
         </mat-form-field>
     </div>
     <span>Ya estas Registrado -> <a href="Login">Login</a></span>
     <br>
-    <button mat-raised-button color="primary" class="btn-form">Aceptar</button>
+    <button mat-raised-button color="primary" class="btn-form" [disabled]="FormRegister.invalid">Aceptar</button>
 </form>

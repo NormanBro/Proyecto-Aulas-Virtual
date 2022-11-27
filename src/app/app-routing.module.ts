@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:"Home",component:CanvaHomeComponent},
   {path:"Mensaje",component:CanvaMensajeComponent},
   {path:"Notificacion",component:CanvaNotificacionComponent},
-  {path:"Unidad",component:CanvaUnidadComponent},
+  {path:"Materia",component:CanvaUnidadComponent},
   {path:"Tarea",component:CanvaTareaComponent}
 ];
 

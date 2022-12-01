@@ -4,6 +4,7 @@ mat-grid-list{
 }
 mat-card{
     border-radius: 20px;
+    margin: 0 50px;
 }
 mat-card-content{
     background-color: var(--Paleta-Color-5);

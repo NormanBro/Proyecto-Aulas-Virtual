@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogAccesoAulaComponent } from '../Dialogos/dialog-acceso-aula/dialog-acceso-aula.component';
+import { DialogVerCodigoComponent } from '../Dialogos/dialog-ver-codigo/dialog-ver-codigo.component';
 
 @Component({
   selector: 'app-nav-estudiante',
@@ -13,6 +14,9 @@ export class NavEstudianteComponent implements OnInit {
 
   OpenDialog(){
     this.Dialog.open(DialogAccesoAulaComponent);
+  }
+  OpenDialogCodigo(){
+    this.Dialog.open(DialogVerCodigoComponent);
   }
   ngOnInit(): void {
   }

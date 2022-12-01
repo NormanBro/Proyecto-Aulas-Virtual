@@ -1,10 +1,11 @@
 <mat-grid-list cols="4" rowHeight="400px">
-    <mat-grid-tile>
+    
+    <mat-grid-tile *ngFor="let Datos of GetData">
         <mat-card>
             <mat-card-header>
-                <mat-card-title>Materia Que imparte</mat-card-title>
+                <mat-card-title>{{ Datos.Nombre }}</mat-card-title>
             </mat-card-header>
-            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" height="150px">
+            <img src="/API/VIRTUAL/Doc/{{Datos.Imagen}}" height="120px" width="150px">
             <hr>
             <mat-card-actions align="end">
                 <button mat-button color="primary">Ingresar</button>
@@ -12,7 +13,4 @@
         </mat-card>
     </mat-grid-tile>
 
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
   </mat-grid-list>

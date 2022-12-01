@@ -39,6 +39,7 @@ import { CanvaUnidadComponent } from './Components/Unidades/canva-unidad/canva-u
 import { BodyUnidadComponent } from './Components/Unidades/body-unidad/body-unidad.component';
 import { CanvaTareaComponent } from './Components/Tareas/canva-tarea/canva-tarea.component';
 import { BodyTareaComponent } from './Components/Tareas/body-tarea/body-tarea.component';
+import { DialogVerCodigoComponent } from './Components/Extras/Dialogos/dialog-ver-codigo/dialog-ver-codigo.component';
 
 @NgModule({
   declarations: [
@@ -69,11 +70,13 @@ import { BodyTareaComponent } from './Components/Tareas/body-tarea/body-tarea.co
     CanvaUnidadComponent,
     BodyUnidadComponent,
     CanvaTareaComponent,
-    BodyTareaComponent
+    BodyTareaComponent,
+    DialogVerCodigoComponent
   ],
   entryComponents:[
     DialogAccesoAulaComponent,
-    CanvaAddMaterialComponent
+    CanvaAddMaterialComponent,
+    DialogVerCodigoComponent,
   ],
   imports: [
     BrowserModule,

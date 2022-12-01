@@ -10,4 +10,7 @@ export class ServGetService {
   GetAllBD(TB:string){
     return this.http.get('/API/VIRTUAL/GET/'+TB);
   }
+  GetAllBD_IDUser(TB:string,ID:string){
+    return this.http.get('/API/VIRTUAL/GET/'+TB+'/'+ID);
+  }
 }

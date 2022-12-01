@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServGetService } from 'src/app/Service/ServGet/serv-get.service';
 
 @Component({
   selector: 'app-home-maestro',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeMaestroComponent implements OnInit {
 
-  constructor() { }
+  GetData:any=[]
+  constructor(ServGet:ServGetService) { 
+    ServGet.GetAllBD_IDUser('materias',sessionStorage.getItem('ID_usuario')||'').subscribe(Data=>{
+      this.GetData=Data;
+    });
+  }
 
   ngOnInit(): void {
   }

@@ -1,10 +1,10 @@
 <mat-grid-list cols="4" rowHeight="400px">
-    <mat-grid-tile>
+    <mat-grid-tile *ngFor="let Dato of ArrayMateria">
         <mat-card>
             <mat-card-header>
-                <mat-card-title>Materia</mat-card-title>
+                <mat-card-title>{{ Dato.Nombre | uppercase }}</mat-card-title>
             </mat-card-header>
-            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" height="150px">
+            <img src="/API/VIRTUAL/Doc/{{ Dato.Imagen}}" height="150px">
             <hr>
             <mat-card-content>
                 <p>
